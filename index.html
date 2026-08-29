@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mashary Cars - Premium Smart Car Rental Platform"
+    />
+    <title>Home | Mashary Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/social.css" />
+  </head>
+  <body>
+    <script src="js/theme-init.js"></script>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="logo" style="width: 75px">
+          <a href="index.html"><img src="logo-r.png" alt="" data-language-logo="true" /></a>
+        </div>
+        <nav class="nav-desktop">
+          <a
+            href="index.html"
+            class="nav-link active"
+            data-en="Home"
+            data-ar="الرئيسية"
+            data-fr="Accueil"
+            >Home</a
+          ><a
+            href="cars.html"
+            class="nav-link"
+            data-en="Cars"
+            data-ar="السيارات"
+            data-fr="Voitures"
+            >Cars</a
+          ><a
+            href="how-it-works.html"
+            class="nav-link"
+            data-en="How It Works"
+            data-ar="كيف تعمل"
+            data-fr="Comment ça marche"
+            >How It Works</a
+          ><a
+            href="about.html"
+            class="nav-link"
+            data-en="About"
+            data-ar="من نحن"
+            data-fr="À propos"
+            >About</a
+          ><a
+            href="contact.html"
+            class="nav-link"
+            data-en="Contact"
+            data-ar="تواصل"
+            data-fr="Contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="header-actions">
+          <div class="lang-dropdown" data-id="lang-desktop"></div>
+          <button class="btn-icon" id="theme-toggle" title="Toggle theme">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+          </button>
+          <a
+            href="https://wa.me/201029208418"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            ><svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            WhatsApp</a
+          >
+        </div>
+        <div class="mobile-toggle">
+          <a
+            href="https://wa.me/201029208418"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-whatsapp"
+            aria-label="WhatsApp"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+          </a>
+          <button
+            id="mobile-toggle"
+            class="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a
+          href="index.html"
+          class="nav-link active"
+          data-en="Home"
+          data-ar="الرئيسية"
+          data-fr="Accueil"
+          >Home</a
+        ><a
+          href="cars.html"
+          class="nav-link"
+          data-en="Cars"
+          data-ar="السيارات"
+          data-fr="Voitures"
+          >Cars</a
+        ><a
+          href="how-it-works.html"
+          class="nav-link"
+          data-en="How It Works"
+          data-ar="كيف تعمل"
+          data-fr="Comment ça marche"
+          >How It Works</a
+        ><a
+          href="about.html"
+          class="nav-link"
+          data-en="About"
+          data-ar="من نحن"
+          data-fr="À propos"
+          >About</a
+        ><a
+          href="contact.html"
+          class="nav-link"
+          data-en="Contact"
+          data-ar="تواصل"
+          data-fr="Contact"
+          >Contact</a
+        >
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-top: 1px solid var(--border);
+            margin-top: 1rem;
+          "
+        >
+          <div
+            class="lang-dropdown lang-dropdown-mobile"
+            data-id="lang-mobile"
+          ></div>
+          <button
+            id="theme-toggle-mobile"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: var(--text-secondary);
+            "
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+            <span
+              data-en="Dark Mode"
+              data-ar="الوضع الداكن"
+              data-fr="Mode sombre"
+              >Dark Mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top: 72px">
+      <div class="hero-bg">
+        <img
+          id="hero-image"
+          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=90"
+          alt="Premium car"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <h1
+          data-en="FIND YOUR PERFECT RIDE"
+          data-ar="اعثر على سيارتك المثالية"
+          data-fr="TROUVEZ LA VOITURE PARFAITE"
+        >
+          FIND YOUR PERFECT RIDE
+        </h1>
+        <p
+          data-en="Premium car rental, wherever you go."
+          data-ar="تأجير سيارات فاخر، أينما ذهبت."
+          data-fr="Location de voitures premium, où que vous alliez."
+        >
+          Premium car rental, wherever you go.
+        </p>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+          "
+        >
+          <a
+            href="cars.html"
+            class="btn-primary"
+            style="font-size: 1.125rem; padding: 0.875rem 2rem"
+            data-en="FIND MY CAR"
+            data-ar="اعثر على سيارتي"
+            data-fr="TROUVER MA VOITURE"
+            >FIND MY CAR</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CARS VISUAL SHOWCASE -->
+    <section class="cars-showcase-section">
+      <div class="container">
+        <div class="cars-showcase-heading showcase-reveal">
+          <div>
+            <span
+              class="showcase-kicker"
+              data-en="OUR CARS"
+              data-ar="عربياتنا مميزه  "
+              data-fr="NOS VOITURES"
+              >OUR CARS</span
+            >
+            <h2
+              class="section-title"
+              data-en="Our Cars Are Something Else"
+              data-ar="عربياتنا "
+              data-fr="Nos voitures sont à part"
+            >
+              Our Cars Are Something Else
+            </h2>
+            <p
+              class="section-subtitle"
+              data-en="Looking for something special? Take a look at our fleet and choose the car that fits you best."
+              data-ar="عايز عربية على مزاجك؟ ادخل شوف عربياتنا واختار العربية اللي تناسبك."
+              data-fr="Vous cherchez quelque chose de spécial ? Découvrez notre flotte et choisissez la voiture qui vous convient le mieux."
+            >
+              Looking for something special? Take a look at our fleet and choose
+              the car that fits you best.
+            </p>
+          </div>
+        </div>
+
+        <div class="showcase-grid showcase-visual-grid">
+          <div
+            class="showcase-car showcase-visual-card showcase-reveal"
+            style="--showcase-delay: 0ms"
+          >
+            <div class="showcase-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1000&q=85"
+                alt="Premium sports car"
+                loading="lazy"
+              />
+              <span
+                class="showcase-badge"
+                data-en="PREMIUM"
+                data-ar="فاخرة"
+                data-fr="PREMIUM"
+                >PREMIUM</span
+              >
+              <div class="showcase-hover-label">
+                <span data-en="Performance" data-ar="أداء" data-fr="Performance"
+                  >Performance</span
+                ><b>→</b>
+              </div>
+              <div class="showcase-shine"></div>
+            </div>
+            <div class="showcase-visual-caption">
+              <div>
+                <strong
+                  data-en="Made to stand out"
+                  data-ar="عربية تلفت النظر"
+                  data-fr="Conçue pour se démarquer"
+                  >Made to stand out</strong
+                ><span
+                  data-en="Sporty • Premium • Bold"
+                  data-ar="رياضية • فاخرة • جريئة"
+                  data-fr="Sportive • Premium • Audacieuse"
+                  >Sporty • Premium • Bold</span
+                >
+              </div>
+              <span class="showcase-mini-arrow">↗</span>
+            </div>
+          </div>
+
+          <div
+            class="showcase-car showcase-visual-card showcase-reveal showcase-featured-card"
+            style="--showcase-delay: 90ms"
+          >
+            <div class="showcase-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1000&q=85"
+                alt="Luxury SUV"
+                loading="lazy"
+              />
+              <span
+                class="showcase-badge"
+                data-en="SUV"
+                data-ar="SUV"
+                data-fr="SUV"
+                >SUV</span
+              >
+              <div class="showcase-hover-label">
+                <span data-en="Adventure" data-ar="مغامرة" data-fr="Aventure"
+                  >Adventure</span
+                ><b>→</b>
+              </div>
+              <div class="showcase-shine"></div>
+            </div>
+            <div class="showcase-visual-caption">
+              <div>
+                <strong
+                  data-en="Ready for the road"
+                  data-ar="جاهزة للطريق"
+                  data-fr="Prête pour la route"
+                  >Ready for the road</strong
+                ><span
+                  data-en="Comfort • Space • Power"
+                  data-ar="راحة • مساحة • قوة"
+                  data-fr="Confort • Espace • Puissance"
+                  >Comfort • Space • Power</span
+                >
+              </div>
+              <span class="showcase-mini-arrow">↗</span>
+            </div>
+          </div>
+
+          <div
+            class="showcase-car showcase-visual-card showcase-reveal"
+            style="--showcase-delay: 180ms"
+          >
+            <div class="showcase-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1000&q=85"
+                alt="Luxury grand touring car"
+                loading="lazy"
+              />
+              <span
+                class="showcase-badge"
+                data-en="LUXURY"
+                data-ar="فاخرة"
+                data-fr="LUXE"
+                >LUXURY</span
+              >
+              <div class="showcase-hover-label">
+                <span data-en="Luxury" data-ar="فخامة" data-fr="Luxe"
+                  >Luxury</span
+                ><b>→</b>
+              </div>
+              <div class="showcase-shine"></div>
+            </div>
+            <div class="showcase-visual-caption">
+              <div>
+                <strong
+                  data-en="Travel in style"
+                  data-ar="سافر بذوق"
+                  data-fr="Voyagez avec style"
+                  >Travel in style</strong
+                ><span
+                  data-en="Elegant • Smooth • Refined"
+                  data-ar="أنيقة • ناعمة • راقية"
+                  data-fr="Élégante • Fluide • Raffinée"
+                  >Elegant • Smooth • Refined</span
+                >
+              </div>
+              <span class="showcase-mini-arrow">↗</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="showcase-cta showcase-visual-cta showcase-reveal"
+          style="--showcase-delay: 240ms"
+        >
+          <div>
+            <h3
+              data-en="See what's available and find the car you want."
+              data-ar="ادخل شوف المتاح واختار العربية اللي عايزها."
+              data-fr="Consultez les disponibilités et trouvez la voiture que vous voulez."
+            >
+              See what's available and find the car you want.
+            </h3>
+            <p
+              data-en="Cars and availability can vary by destination, so check the full Cars page for the latest options."
+              data-ar="العربيات والتوفر ممكن يختلفوا حسب المكان، عشان كده شوف صفحة السيارات كاملة لمعرفة المتاح."
+              data-fr="Les voitures et leur disponibilité varient selon la destination ; consultez la page Voitures pour les dernières options."
+            >
+              Cars and availability can vary by destination, so check the full
+              Cars page for the latest options.
+            </p>
+          </div>
+          <a
+            href="cars.html"
+            class="showcase-explore-btn"
+            aria-label="Explore cars"
+          >
+            <span class="showcase-explore-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <path d="M5 12h13" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </span>
+            <span
+              class="showcase-explore-text"
+              data-en="EXPLORE CARS"
+              data-ar="شوف العربيات"
+              data-fr="EXPLORER LES VOITURES"
+              >EXPLORE CARS</span
+            >
+            <span class="showcase-explore-glow" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY Mashary Cars -->
+    <section>
+      <div class="container">
+        <h2
+          class="section-title text-center mb-12"
+          data-en="WHY Mashary Cars"
+          data-ar="لماذا Mashary Cars"
+          data-fr="POURQUOI Mashary Cars"
+        >
+          WHY Mashary Cars
+        </h2>
+        <div class="why-grid why-kayan-grid">
+          <div class="why-card why-card-animated" style="--why-delay: 0ms">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M12 3l7 3v5c0 4.7-2.9 8.7-7 10-4.1-1.3-7-5.3-7-10V6l7-3z"
+              />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
+            <h3
+              data-en="Real Vehicles"
+              data-ar="سيارات حقيقية"
+              data-fr="Véhicules réels"
+            >
+              Real Vehicles
+            </h3>
+          </div>
+          <div class="why-card why-card-animated" style="--why-delay: 70ms">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15 14" />
+            </svg>
+            <h3
+              data-en="Flexible Pickup"
+              data-ar="استلام مرن"
+              data-fr="Prise en charge flexible"
+            >
+              Flexible Pickup
+            </h3>
+          </div>
+          <div class="why-card why-card-animated" style="--why-delay: 140ms">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            <h3
+              data-en="WhatsApp Support"
+              data-ar="دعم واتساب"
+              data-fr="Support WhatsApp"
+            >
+              WhatsApp Support
+            </h3>
+          </div>
+          <div class="why-card why-card-animated" style="--why-delay: 210ms">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="5" width="20" height="14" rx="2" />
+              <line x1="2" y1="10" x2="22" y2="10" />
+              <line x1="6" y1="15" x2="10" y2="15" />
+            </svg>
+            <h3
+              data-en="Pay on Delivery"
+              data-ar="الدفع عند الاستلام"
+              data-fr="Paiement à la livraison"
+            >
+              Pay on Delivery
+            </h3>
+          </div>
+          <div class="why-card why-card-animated" style="--why-delay: 280ms">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+              <line x1="8" y1="2" x2="8" y2="18" />
+              <line x1="16" y1="6" x2="16" y2="22" />
+            </svg>
+            <h3
+              data-en="Multiple Destinations"
+              data-ar="وجهات متعددة"
+              data-fr="Destinations multiples"
+            >
+              Multiple Destinations
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section style="background: var(--bg-secondary)">
+      <div class="container">
+        <h2
+          class="section-title text-center mb-12"
+          data-en="HOW Mashary Cars WORKS"
+          data-ar="كيف تعمل Mashary Cars"
+          data-fr="COMMENT FONCTIONNE Mashary Cars"
+        >
+          HOW Mashary Cars WORKS
+        </h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <div>
+              <h3
+                data-en="Choose Your Car"
+                data-ar="اختر سيارتك"
+                data-fr="Choisissez votre voiture"
+              >
+                Choose Your Car
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                Browse our premium fleet
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <div>
+              <h3
+                data-en="Tell Us Your Trip Details"
+                data-ar="أخبرنا بتفاصيل رحلتك"
+                data-fr="Indiquez-nous les détails de votre voyage"
+              >
+                Tell Us Your Trip Details
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                Dates, locations, preferences
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <div>
+              <h3
+                data-en="Send Your Request"
+                data-ar="أرسل طلبك"
+                data-fr="Envoyez votre demande"
+              >
+                Send Your Request
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                Via our booking form
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <div>
+              <h3
+                data-en="Confirm via WhatsApp"
+                data-ar="تأكد عبر واتساب"
+                data-fr="Confirmez via WhatsApp"
+              >
+                Confirm via WhatsApp
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                Our team confirms details
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">05</span>
+            <div>
+              <h3
+                data-en="Pick Up Your Car"
+                data-ar="استلم سيارتك"
+                data-fr="Récupérez votre voiture"
+              >
+                Pick Up Your Car
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                At your chosen location
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">06</span>
+            <div>
+              <h3
+                data-en="Pay When You Receive It"
+                data-ar="ادفع عند الاستلام"
+                data-fr="Payez à la réception"
+              >
+                Pay When You Receive It
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.875rem">
+                No upfront payment needed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAY ON DELIVERY -->
+    <section>
+      <div class="container text-center">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="1" y="4" width="22" height="16" rx="2" />
+          <line x1="1" y1="10" x2="23" y2="10" />
+        </svg>
+        <h2
+          class="section-title mt-6 mb-4"
+          data-en="PAY WHEN YOU RECEIVE YOUR CAR"
+          data-ar="ادفع عند استلام سيارتك"
+          data-fr="PAYEZ À LA RÉCEPTION DE VOTRE VOITURE"
+        >
+          PAY WHEN YOU RECEIVE YOUR CAR
+        </h2>
+        <p
+          class="section-subtitle mx-auto"
+          data-en="No online payment required."
+          data-ar="لا يوجد دفع إلكتروني مطلوب."
+          data-fr="Aucun paiement en ligne requis."
+        >
+          No online payment required.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--bg-secondary)">
+      <div class="container" style="max-width: 800px">
+        <h2
+          class="section-title text-center mb-12"
+          data-en="FREQUENTLY ASKED QUESTIONS"
+          data-ar="الأسئلة الشائعة"
+          data-fr="QUESTIONS FRÉQUENTES"
+        >
+          FREQUENTLY ASKED QUESTIONS
+        </h2>
+        <div class="faq-item">
+          <div class="faq-q">Can I pay online?</div>
+          <div
+            class="faq-a"
+            data-en="No, payment is made when you receive the car."
+            data-ar="لا، الدفع عند استلام السيارة."
+            data-fr="Non, le paiement se fait à la réception de la voiture."
+          >
+            No, payment is made when you receive the car.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I request a car that is not listed?</div>
+          <div
+            class="faq-a"
+            data-en="Yes, you can send a special request and the Mashary Cars team will contact you."
+            data-ar="نعم، يمكنك إرسال طلب خاص وسيتواصل معك فريق Mashary Cars."
+            data-fr="Oui, vous pouvez envoyer une demande spéciale et l'équipe Mashary Cars vous contactera."
+          >
+            Yes, you can send a special request and the Mashary Cars team will
+            contact you.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Are the photos real?</div>
+          <div
+            class="faq-a"
+            data-en="It depends on the image type: Real Vehicle or Representative Image."
+            data-ar="وضح حسب نوع الصورة: سيارة حقيقية أو صورة تمثيلية."
+            data-fr="Cela dépend du type d'image : véhicule réel ou image représentative."
+          >
+            It depends on the image type: Real Vehicle or Representative Image.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is the booking confirmed immediately?</div>
+          <div
+            class="faq-a"
+            data-en="Sending the request is not final confirmation. Confirmation is done via WhatsApp."
+            data-ar="إرسال الطلب ليس تأكيدًا نهائيًا. يتم التأكيد عبر واتساب."
+            data-fr="L'envoi de la demande ne vaut pas confirmation finale. La confirmation se fait via WhatsApp."
+          >
+            Sending the request is not final confirmation. Confirmation is done
+            via WhatsApp.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is a driver available?</div>
+          <div
+            class="faq-a"
+            data-en="Depending on the car and available services."
+            data-ar="حسب السيارة والخدمة المتاحة."
+            data-fr="Selon la voiture et les services disponibles."
+          >
+            Depending on the car and available services.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="logo" style="margin-bottom: 0.75rem">Mashary Cars</div>
+            <p
+              style="color: var(--text-secondary); font-size: 0.875rem"
+              data-en="Premium Car Rental"
+              data-ar="تأجير سيارات فاخر"
+              data-fr="Location de voitures premium"
+            >
+              Premium Car Rental
+            </p>
+          </div>
+          <div>
+            <div
+              class="footer-title"
+              data-en="Explore"
+              data-ar="استكشف"
+              data-fr="Explorer"
+            >
+              Explore
+            </div>
+            <a
+              href="cars.html"
+              class="footer-link"
+              data-en="Cars"
+              data-ar="السيارات"
+              data-fr="Voitures"
+              >Cars</a
+            >
+
+            <a
+              href="how-it-works.html"
+              class="footer-link"
+              data-en="How It Works"
+              data-ar="كيف تعمل"
+              data-fr="Comment ça marche"
+              >How It Works</a
+            >
+            <a
+              href="about.html"
+              class="footer-link"
+              data-en="About"
+              data-ar="من نحن"
+              data-fr="À propos"
+              >About</a
+            >
+          </div>
+          <div>
+            <div
+              class="footer-title"
+              data-en="Service Areas"
+              data-ar="مناطق الخدمة"
+              data-fr="Zones desservies"
+            >
+              Service Areas
+            </div>
+            <span
+              class="footer-link"
+              data-en="Egypt & Morocco"
+              data-ar="مصر والمغرب"
+              data-fr="Égypte et Maroc"
+              >Egypt & Morocco</span
+            >
+            <span
+              class="footer-link"
+              data-en="Country-specific fleet"
+              data-ar="أسطول مخصص لكل دولة"
+              data-fr="Flotte spécifique à chaque pays"
+              >Country-specific fleet</span
+            >
+          </div>
+          <div>
+            <div
+              class="footer-title"
+              data-en="Contact"
+              data-ar="تواصل"
+              data-fr="Contact"
+            >
+              Contact
+            </div>
+            <a
+              href="https://wa.me/201029208418"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+              >WhatsApp</a
+            >
+            <span class="footer-link">info@kayan.com</span>
+            <span class="footer-link">[Configurable Address]</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 Mashary Cars.
+          <span
+            data-en="All rights reserved."
+            data-ar="جميع الحقوق محفوظة."
+            data-fr="Tous droits réservés."
+            >All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-bottom-bar">
+      <a href="cars.html"
+        ><span
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+          "
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+            />
+            <circle cx="7" cy="17" r="2" />
+            <circle cx="17" cy="17" r="2" /></svg
+          ><span data-en="Cars" data-ar="السيارات" data-fr="Voitures"
+            >Cars</span
+          ></span
+        ></a
+      >
+      <a
+        href="https://wa.me/201029208418"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+          "
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+            /></svg
+          ><span>WhatsApp</span></span
+        ></a
+      >
+    </div>
+        <div class="social-float" id="socialFloat">
+      <div class="social-float-card" id="socialFloatLinks" aria-hidden="true">
+        <div class="social-icons facebook">
+          <p>@Facebook</p>
+          <a
+            href="#"
+            id="socialFacebookFloat"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow Facebook"
+            >Follow</a
+          >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"
+            />
+          </svg>
+        </div>
+        <div class="social-icons tiktok">
+          <p>@TikTok</p>
+          <a
+            href="#"
+            id="socialTiktokFloat"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow TikTok"
+            >Follow</a
+          >
+          <svg viewBox="0 0 512 512" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2C155.11 497.78 199.36 496 199.36 496c7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-9.17 1.1-29.76-2.1-50.84-12.61Z"
+            />
+          </svg>
+        </div>
+        <div class="social-icons instagram">
+          <p>@Instagram</p>
+          <a
+            href="#"
+            id="socialInstagramFloat"
+            target="_blank"
+            rel="noopener"
+            aria-label="Follow Instagram"
+            >Follow</a
+          >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 0 1 1.772 1.153 4.902 4.902 0 0 1 1.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 0 1-1.153 1.772 4.902 4.902 0 0 1-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 0 1-1.772-1.153 4.902 4.902 0 0 1-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 0 1 1.153-1.772A4.902 4.902 0 0 1 5.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63ZM12 6.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm5.338-3.205a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <button
+        class="social-toggle"
+        id="socialToggle"
+        type="button"
+        aria-label="Open social media links"
+        aria-expanded="false"
+        aria-controls="socialFloatLinks"
+      >
+           <img src="cars-images/22062023-scaled-1.png" alt="">
+      </button>
+      <a
+        class="whatsapp-float"
+        id="waFloat"
+        href="#"
+        target="_blank"
+        rel="noopener"
+        aria-label="WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .4 5.2.4 11.7c0 2.1.6 4.2 1.7 6L.3 24l6.5-1.7a11.7 11.7 0 0 0 5.3 1.3h.1c6.4 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6.1-3.4-8.4ZM12.1 21.5h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.5 4.7Z"
+          />
+          <path
+            class="social-fill"
+            d="M17.8 14.5c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.8-2.1-.2-.3 0-.5.2-.7l.5-.6c.2-.2.2-.4.3-.6s0-.4-.1-.6c-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.6.8.3 1.5.5 2 .6.8.2 1.5.2 2 .1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.4Z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/social.js"></script>
+  </body>
+</html>

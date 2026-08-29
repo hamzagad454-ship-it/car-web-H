@@ -1,0 +1,250 @@
+/* =========================================================
+   MASHARY CARS — WhatsApp & Social Media floating widget
+   Same behaviour/markup pattern as the Food site's widget,
+   restyled to match this site's dark/gold theme.
+   Facebook is used here instead of YouTube.
+   ========================================================= */
+.social-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  direction: ltr;
+}
+.social-toggle {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  
+  color: var(--text-primary, #f5f5f7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  flex: 0 0 auto;
+}
+.social-toggle:hover {
+  transform: scale(1.06);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+.social-toggle:focus-visible {
+  outline: 3px solid rgba(232, 185, 35, 0.4);
+  outline-offset: 3px;
+}
+.social-toggle-icon {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+}
+.social-toggle-icon svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-float.open .social-toggle {
+  transform: rotate(45deg);
+  background: var(--accent, #e8b923);
+  color: #0a0a0f;
+}
+.social-float-card {
+  display: flex;
+  width: 220px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 115px;
+  padding-inline: 15px;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(12px) scale(0.92);
+  transform-origin: right center;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.social-float.open .social-float-card {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+}
+.social-icons {
+  cursor: pointer;
+  display: flex;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #16161f;
+  font-weight: 700;
+  font-size: 11px;
+  width: 42px;
+  height: 42px;
+}
+.social-icons > p,
+.social-icons > a {
+  position: absolute;
+  width: max-content;
+  transition: all 0.7s ease;
+  opacity: 0;
+  z-index: 20;
+  pointer-events: none;
+  line-height: 1;
+}
+.social-icons > p {
+  --var: -0%;
+  top: var(--var);
+  margin: 0;
+  background: #16161f;
+  color: #fff;
+  border-radius: 7px;
+  padding: 5px 7px;
+}
+.social-icons > p::after {
+  content: "";
+  position: absolute;
+  border-top: 8px solid #16161f;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-icons > a {
+  --var: -0%;
+  bottom: var(--var);
+  background: #e8b923;
+  color: #16161f;
+  border-radius: 7px;
+  padding: 5px 7px;
+}
+.social-icons > a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 8px solid #e8b923;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-icons:hover > a,
+.social-icons:hover > p {
+  --var: -65%;
+  opacity: 1;
+}
+.social-icons:hover {
+  z-index: 15;
+  transform: scale(1.08);
+}
+.social-float-card:hover > .social-icons:not(:hover) {
+  filter: blur(2px);
+  transform: scale(0.84);
+  opacity: 0.72;
+}
+.social-icons svg {
+  height: 30px;
+  width: 30px;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.social-icons:hover svg {
+  transform: scale(1.06);
+}
+.social-icons.facebook svg {
+  color: #1877f2;
+}
+.social-icons.instagram svg {
+  color: #ff1493;
+}
+.social-icons.tiktok svg {
+  color: #000;
+}
+/* WhatsApp stays a separate companion button, official green */
+.social-float .whatsapp-float {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  min-height: 56px !important;
+  border-radius: 50%;
+  display: grid !important;
+  place-items: center;
+  background: #25d366 !important;
+  color: #fff !important;
+  border: 3px solid var(--bg, #0a0a0f);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  flex: 0 0 auto;
+}
+.social-float .whatsapp-float:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.42);
+}
+.social-float .whatsapp-float svg {
+  width: 29px;
+  height: 29px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-float .whatsapp-float .social-fill {
+  fill: currentColor;
+  stroke: none;
+}
+[data-theme="light"] .social-toggle {
+  background: #ffffff;
+}
+[data-theme="light"] .social-float .whatsapp-float {
+  border-color: var(--bg, #fafafa);
+}
+/* Clear the mobile bottom nav bar (64px) on small screens */
+@media (max-width: 767px) {
+  .social-float {
+    right: 12px;
+    bottom: 84px;
+    gap: 7px;
+  }
+  .social-float-card {
+    width: 196px;
+    height: 48px;
+    padding-inline: 11px;
+  }
+  .social-toggle {
+    width: 44px;
+    height: 44px;
+  }
+  .social-float .whatsapp-float {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+  }
+  .social-float .whatsapp-float svg {
+    width: 27px;
+    height: 27px;
+  }
+  .social-icons {
+    width: 22px;
+    height: 22px;
+  }
+  .social-icons svg {
+    width: 22px;
+    height: 22px;
+  }
+}
